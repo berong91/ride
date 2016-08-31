@@ -52,39 +52,26 @@ Get Started with Ubuntu
         Note: The standard installed version of qmake does not work,
               you have to use the Qt 5.6 version of qmake (refer to
               the known issues for instructions on how to do this).
-5.  Install the require library
-  
-  ```bash
-  sudo apt-get install libgl1-mesa-dev
-  ```
-
-6.  Clone rix compiler version #905e7be from the git repository [https://github.com/riolet/rix]. We want to use this version because at the moment, ride is only compatible with this version of the compiler.
-  
-  ```bash
-  git clone https://github.com/riolet/rix.git
-  cd rix
-  git checkout 905e7be
-  ```
-  
-7.  From inside ride folder, copy these files into the new rix folder
-  
-  ```
-  rix       ## Used to compile your Rix files.
-  paths.sh  ## Used to link the copied rix file and compile
-  ```
-  
-8.  Now we get into folder rix, edit the compiler path in line 3, file `rix/rix` that we copy above
-
-  ```sh
-  export RIX_HOME=/path/to/your/rix/folder
-    ```
-
-9. Execute the paths.sh file with the command:
-
-  ```bash
-  sudo chmod +x paths.sh
-  sudo ./paths.sh
-  ```
+5.  sudo apt-get install libgl1-mesa-dev
+6.  clone rix compiler version #905e7be from the git repository [https://github.com/riolet/rix]
+    ````
+    git clone https://github.com/riolet/rix.git
+    cd rix
+    git checkout 905e7be
+    ````
+    The reason for us to use this version is because at the moment, ride is only compatible with this version of the compiler.
+7.  From ride folder, copy these files into your Rix folder
+   `rix`      ## Used to compile your Rix files.
+   `paths.sh` ## Used to link the copied rix file and compile
+8.  Inside folder rix, edit the compiler path in line 3, file `rix/rix` that we copy above
+    ````
+    export RIX_HOME=/path/to/your/rix/folder
+    `````
+9.  Execute the paths.sh file with the command:
+    ````
+    chmod +x paths.sh
+    ./paths.sh
+    ````
 
 Team
 ====
