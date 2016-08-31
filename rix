@@ -1,6 +1,6 @@
 #!/bin/sh
 #   THIS SCRIPT FILE WILL BE USED TO COMPILE YOUR RIX FILES
-
+export RIX_HOME=/path/to/your/rix/folder
 RIX_HOME=${RIX_HOME:-.}
 RIX_FILE=${1}
 #Grab the rix file's fullpath and directory
